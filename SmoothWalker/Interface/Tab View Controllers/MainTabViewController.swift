@@ -28,6 +28,7 @@ class MainTabViewController: UITabBarController {
     func setUpTabViewController() {
         let viewControllers = [
             createWelcomeViewController(),
+            createWalkDataViewController(),
             createWeeklyQuantitySampleTableViewController(),
             createChartViewController(),
             createWeeklyReportViewController()
@@ -47,6 +48,15 @@ class MainTabViewController: UITabBarController {
         viewController.tabBarItem = UITabBarItem(title: "Welcome",
                                                  image: UIImage(systemName: "circle"),
                                                  selectedImage: UIImage(systemName: "circle.fill"))
+        return viewController
+    }
+    
+    private func createWalkDataViewController() -> UIViewController {
+        let  viewController = WalkDataViewController()
+        
+        viewController.tabBarItem = UITabBarItem(title: "Walk Report",
+                                                 image: UIImage(systemName: "figure.walk.diamond"),
+                                                 selectedImage: UIImage(systemName: "figure.walk.diamond.fill"))
         return viewController
     }
     
