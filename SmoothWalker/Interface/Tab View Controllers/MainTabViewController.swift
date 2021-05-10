@@ -28,7 +28,7 @@ class MainTabViewController: UITabBarController {
     func setUpTabViewController() {
         let viewControllers = [
             createWelcomeViewController(),
-            createWalkDataViewController(),
+            createWalkDataContainerViewController(),
             createWeeklyQuantitySampleTableViewController(),
             createChartViewController(),
             createWeeklyReportViewController()
@@ -51,8 +51,8 @@ class MainTabViewController: UITabBarController {
         return viewController
     }
     
-    private func createWalkDataViewController() -> UIViewController {
-        let  viewController = WalkDataViewController()
+    private func createWalkDataContainerViewController() -> UIViewController {
+        let  viewController = WalkDataContainerViewController()
         
         viewController.tabBarItem = UITabBarItem(title: "Walk Report",
                                                  image: UIImage(systemName: "figure.walk.diamond"),
