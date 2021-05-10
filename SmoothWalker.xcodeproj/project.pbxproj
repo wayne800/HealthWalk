@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		36467C012643C80500A41109 /* WalkDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36467C002643C80500A41109 /* WalkDataViewController.swift */; };
+		36467C09264499DC00A41109 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 36467C08264499DC00A41109 /* RxCocoa */; };
+		36467C0B264499DC00A41109 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 36467C0A264499DC00A41109 /* RxSwift */; };
+		36467C0E26449ABC00A41109 /* WalkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36467C0D26449ABC00A41109 /* WalkViewModel.swift */; };
+		36467C172647540C00A41109 /* WalkDataContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36467C162647540C00A41109 /* WalkDataContainerViewController.swift */; };
+		36467C202647AEC100A41109 /* WalkDataTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36467C1F2647AEC100A41109 /* WalkDataTableViewSection.swift */; };
+		36467C242647B04000A41109 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 36467C232647B04000A41109 /* Differentiator */; };
+		36467C262647B04000A41109 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 36467C252647B04000A41109 /* RxDataSources */; };
 		EB12722B24859C1600548CD1 /* DataTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */; };
 		EB12722D2485BA9400548CD1 /* HealthDataTypeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */; };
 		EB12722F2485C83E00548CD1 /* EmptyDataBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722E2485C83E00548CD1 /* EmptyDataBackgroundView.swift */; };
@@ -43,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		36467C002643C80500A41109 /* WalkDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkDataViewController.swift; sourceTree = "<group>"; };
+		36467C0D26449ABC00A41109 /* WalkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkViewModel.swift; sourceTree = "<group>"; };
+		36467C162647540C00A41109 /* WalkDataContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkDataContainerViewController.swift; sourceTree = "<group>"; };
+		36467C1F2647AEC100A41109 /* WalkDataTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkDataTableViewSection.swift; sourceTree = "<group>"; };
 		8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		DDC3EAD6D9404AADDCC92FF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypeTableViewCell.swift; sourceTree = "<group>"; };
@@ -87,7 +97,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36467C09264499DC00A41109 /* RxCocoa in Frameworks */,
+				36467C242647B04000A41109 /* Differentiator in Frameworks */,
 				EB2ACB972492B2D600DEFA22 /* CareKitUI in Frameworks */,
+				36467C262647B04000A41109 /* RxDataSources in Frameworks */,
+				36467C0B264499DC00A41109 /* RxSwift in Frameworks */,
 				F9907B09245894E600987667 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36467C15264753DB00A41109 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				36467C0D26449ABC00A41109 /* WalkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		58678013FC22E92E1995728A /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +183,7 @@
 			children = (
 				EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */,
 				EB644FA22473136500CF27F0 /* ServerResponse.swift */,
+				36467C1F2647AEC100A41109 /* WalkDataTableViewSection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +212,7 @@
 		EB48C1BE246B25D000AE8FE3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				36467C162647540C00A41109 /* WalkDataContainerViewController.swift */,
 				36467C002643C80500A41109 /* WalkDataViewController.swift */,
 				EB9525BF2474C9C2001B5178 /* WelcomeViewController.swift */,
 				EB9525B62474C396001B5178 /* WeeklyQuantitySampleTableViewController.swift */,
@@ -256,6 +280,7 @@
 			children = (
 				F9907AF22458947C00987667 /* AppDelegate.swift */,
 				F9907AF42458947C00987667 /* SceneDelegate.swift */,
+				36467C15264753DB00A41109 /* ViewModel */,
 				EB48C1BE246B25D000AE8FE3 /* View Controllers */,
 				EB48C1BF246B25DA00AE8FE3 /* Cells */,
 				EB326B51246B257000FEFD08 /* Models */,
@@ -294,6 +319,10 @@
 			name = SmoothWalker;
 			packageProductDependencies = (
 				EB2ACB962492B2D600DEFA22 /* CareKitUI */,
+				36467C08264499DC00A41109 /* RxCocoa */,
+				36467C0A264499DC00A41109 /* RxSwift */,
+				36467C232647B04000A41109 /* Differentiator */,
+				36467C252647B04000A41109 /* RxDataSources */,
 			);
 			productName = WWDCDemo;
 			productReference = F9907AEF2458947C00987667 /* SmoothWalker.app */;
@@ -325,6 +354,8 @@
 			mainGroup = F9907AE62458947B00987667;
 			packageReferences = (
 				EB2ACB952492B2D600DEFA22 /* XCRemoteSwiftPackageReference "CareKit" */,
+				36467C07264499DC00A41109 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				36467C222647B04000A41109 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = F9907AF02458947C00987667 /* Products */;
 			projectDirPath = "";
@@ -355,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB12722D2485BA9400548CD1 /* HealthDataTypeValue.swift in Sources */,
+				36467C202647AEC100A41109 /* WalkDataTableViewSection.swift in Sources */,
 				F9907AF72458947C00987667 /* FeedItemViewController.swift in Sources */,
 				EB9525BE2474C9A2001B5178 /* SplashScreenViewController.swift in Sources */,
 				EB9525BA2474C8F2001B5178 /* ChartTableViewController.swift in Sources */,
@@ -364,6 +396,7 @@
 				36467C012643C80500A41109 /* WalkDataViewController.swift in Sources */,
 				EB305B7C2485D99B007A7694 /* HealthQueryTableViewController.swift in Sources */,
 				EB305B7E2485E4B8007A7694 /* HealthKitSupport+Strings.swift in Sources */,
+				36467C0E26449ABC00A41109 /* WalkViewModel.swift in Sources */,
 				EB644FA32473136500CF27F0 /* ServerResponse.swift in Sources */,
 				EB326B50246B1B5700FEFD08 /* HealthData.swift in Sources */,
 				EB9525C22475BD41001B5178 /* HealthKitSupport.swift in Sources */,
@@ -376,6 +409,7 @@
 				EB1272332485D5D200548CD1 /* DataTableViewController.swift in Sources */,
 				EB326B4E246B16AD00FEFD08 /* MainTabViewController.swift in Sources */,
 				EB48C1CA246B3A0300AE8FE3 /* ChartViewStyle.swift in Sources */,
+				36467C172647540C00A41109 /* WalkDataContainerViewController.swift in Sources */,
 				EB48C1C4246B351C00AE8FE3 /* CareKitSupport.swift in Sources */,
 				EB644F9F24730E2B00CF27F0 /* MobilityChartDataViewController.swift in Sources */,
 				EB9525C02474C9C2001B5178 /* WelcomeViewController.swift in Sources */,
@@ -593,6 +627,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		36467C07264499DC00A41109 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		36467C222647B04000A41109 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		EB2ACB952492B2D600DEFA22 /* XCRemoteSwiftPackageReference "CareKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carekit-apple/CareKit";
@@ -604,6 +654,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		36467C08264499DC00A41109 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36467C07264499DC00A41109 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		36467C0A264499DC00A41109 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36467C07264499DC00A41109 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		36467C232647B04000A41109 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36467C222647B04000A41109 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		36467C252647B04000A41109 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36467C222647B04000A41109 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
 		EB2ACB962492B2D600DEFA22 /* CareKitUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EB2ACB952492B2D600DEFA22 /* XCRemoteSwiftPackageReference "CareKit" */;

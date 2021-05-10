@@ -18,6 +18,24 @@
           "revision": "c91e5bb74397136f79656bebdfda76a523d3e88c",
           "version": "0.3.2"
         }
+      },
+      {
+        "package": "RxDataSources",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxDataSources.git",
+        "state": {
+          "branch": "main",
+          "revision": "e4627ac4f5a8dc10719030561801825c443acfec",
+          "version": null
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": "main",
+          "revision": "7219024cd02502e9faa6528a655709257f28a105",
+          "version": null
+        }
       }
     ]
   },
